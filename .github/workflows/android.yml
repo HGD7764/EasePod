@@ -23,7 +23,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew :app:assembleDebug :netease-plugin:assembleDebug
+      run: ./gradlew :app:assembleRelease :netease-plugin:assembleRelease
     - name: Upload main app
       uses: actions/upload-artifact@v4
       with:
